@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+ 
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .floating-offer {
+    position: fixed;
+    left: 10px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+    animation: floatOffer 5s linear forwards;
+
+    
+  }
+  header {
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+   
+  
+  }
+  
+  footer {
+  background-color: #00BFFF;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+  main {
+  padding: 40px 0;
+}
+
+.hero {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+.insurance-plans {
+  padding: 40px 0;
+}
+
+.insurance-plans h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.plan-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.plan-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.plan-card p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.dog-quote {
+  background-color:#f0f0f0 ;
+  padding: 40px 0;
+}
+
+.dog-quote h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.dog-quote h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.dog-calculator {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00BFFF;
+  color: #fff;
+  text-decoration:dashed;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: green;
+}
