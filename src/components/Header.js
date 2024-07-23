@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
-// import {Link} from 'react-router-dom';
+
 
 
 const Header = () => {
   // eslint-disable-next-line
   const[showOffer, setShowOffer]= useState(true);
 
+  const handleHomeClick = () => {
+    window.location.reload(); // Reloads the current page
+  };
   return (
     <header>
       <div className="container">
@@ -16,12 +19,7 @@ const Header = () => {
       )}
         <h1>Bark Insurance</h1>
         <nav>
-          <ul>
-            
-             <li>Home</li>
-            <li>Insurance Plans</li>
-            <li>Quote</li>
-          </ul>
+        <div className="nav-button" onClick={handleHomeClick}>Home</div>
         </nav>
       </div>
     </header>

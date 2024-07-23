@@ -18,7 +18,7 @@
 
   .floating-offer {
     position: fixed;
-    left: 10px;
+    right: 10px;
     background-color: green;
     padding: 10px;
     border-radius: 5px;
@@ -131,4 +131,27 @@
 
 .btn:hover {
   background-color: green;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: dashed;
+}
+
+.nav-button:hover {
+  background-color: green;
+}
+
+.App button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+
 }
