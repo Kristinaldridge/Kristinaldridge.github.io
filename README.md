@@ -1,7 +1,8 @@
 # Dog Insurance App
 -This React app presents an interactive page for a dog insurance website, offering a simulated insurance application designed for pet owners seeking coverage for their dogs. Users can explore various insurance plans, receive instant quotes by selecting their preferred plan and specifying the number of dogs. The app concludes by inviting users to rate their experience, enhancing engagement with its user-friendly interface.
 
-# [Netlify Live Link](Netlify link here)
+# https://main--sensational-gingersnap-cecf48.netlify.app/
+(Netlify link here) 
 
 ### Usage
 For the React app only 
