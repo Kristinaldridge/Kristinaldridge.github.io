@@ -7,7 +7,7 @@ const Header = () => {
   const[showOffer, setShowOffer]= useState(true);
 
   const handleHomeClick = () => {
-    window.location.reload(); // Reloads the current page
+    window.location.reload(); 
   };
   return (
     <header>
