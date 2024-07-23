@@ -11,7 +11,7 @@ import { increment, decrement } from './actions';
 import { useSelector, useDispatch } from 'react-redux';
 import { Provider } from 'react-redux';
 
-function App() {
+const App = () => {
   const count = useSelector(state => state.count);
   const dispatch = useDispatch();
 
@@ -23,38 +23,37 @@ function App() {
     dispatch(decrement());
   };
 
-    return (
-        
-      <div className="App">
-        <Header />  
-       
-<main>
-<section>
-<div>
-      <BreedCard />
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <section>
+          <div>
+            <BreedCard />
+          </div>
+        </section>
+        <div>
+          <InsurancePlans />
+        </div>
+        <div>
+          <MoneySection />
+        </div>
+        <h2 style={{ textAlign: 'center', marginTop: '20px' }}>Rate Your Experience</h2>
+        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+          <button onClick={handleIncrement}>Increment</button>
+          <span style={{ margin: '0 10px' }}>{count}</span>
+          <button onClick={handleDecrement}>Decrement</button>
+        </div>
+      </main>
+      <Footer />
     </div>
-  </section>
-  <div>
-    <InsurancePlans />
-  </div>
-<div>
- <MoneySection />
-</div>
-<h2 style={{ textAlign: 'center', marginTop: '20px' }}>Rate Your Experience</h2> 
-      <div style={{ textAlign: 'center', margin: '20px 0' }}>
-        <button onClick={handleIncrement}>Increment</button>
-        <span style={{ margin: '0 10px' }}>{count}</span>
-        <button onClick={handleDecrement}>Decrement</button>
-      </div>
-  </main>
-  <Footer />
-  </div>
- 
-    );
-  };
+  );
+};
 
-  export default () => (
+export default function WrappedApp() {
+  return (
     <Provider store={store}>
-      <App />  
+      <App />
     </Provider>
   );
+}
